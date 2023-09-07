@@ -69,18 +69,48 @@ h1 {
 }
 
 .shopNow button {
-  padding: 22px 34px; /* Adjust the padding to make the button taller and wider */
-    font-size: 28px;   /* Adjust the font size to make the text bigger */
+  padding: 32px 44px; /* Adjust the padding to make the button taller and wider */
+    font-size: 38px;   /* Adjust the font size to make the text bigger */
   background-color: #f87832;
   border: none;
   color: #f87832;
   padding: 12px 24px;
-  font-size: 18px;
+  font-size: 28px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 7cm;
+  height: 3cm;
 }
 
 .shopNow button:hover {
   background-color: #f99c39;
+}
+/* Reset some default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the body to flex display to push footer to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% of the viewport height */
+}
+
+
+
+/* Style the main content */
+main {
+  /* Add your main content styles here */
+  flex-grow: 1; /* Allow the main content to grow and fill the remaining space */
+}
+
+/* Style the footer */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color */
+  text-align: center; /* Center-align the content */
+  padding: 20px 0; /* Add some padding to top and bottom */
 }
